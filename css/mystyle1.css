@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box; 
+}
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh
+}
+.courseContainer{
+    background-color: blue;
+    flex: 1
+}
+.mainContainer{
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.main > .article{
+    flex: 3;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column
+}
+.main > .mentors{
+    flex: 1;
+    background: beige;
+}
+.header, .footer{
+    height: 20vh;
+    background-color: yellowgreen;
+}
+.header, .footer, .courseContainer, .article, .mentors{
+    padding: 16px
+}
+.article > .article1{
+    flex: 1
+}
+.article > .article2{
+    flex: 1
+}
+.header{
+    display: flex;
+    justify-content: center
+}
